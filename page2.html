@@ -1,0 +1,80 @@
+<html>
+	<head>
+	<header>
+		<h1>Missile Launcher</h1>
+	</header>
+		<link rel="stylesheet" href="stylecss.css">
+		<script src="script.js"></script>
+		<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3836/3836671.png">
+	</head>
+	<body>
+	<ul>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22995.294133881565!2d-115.83787355612817!3d37.247984545799866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80b81baaba3e8c81%3A0x970427e38e6237ae!2sZone%2051%2C%20Nevada%2C%20%C3%89tats-Unis!5e1!3m2!1sfr!2sfr!4v1701875787608!5m2!1sfr!2sfr" width="50%" height="300" style="border:3;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</ul><br>
+	<select id="choix" onchange="afficherImage()">
+		<option value="vide">Choisissez un missile</option>
+		<option value="r36">R-36</option>
+		<option value="sm36atlas">SM-36 Atlas</option>
+		<option value="satan2">Satan 2</option>
+		<option value="lmg30">LGM-30 Minuteman</option>
+		<option value="sm68titan">SM-68 Titan</option>
+		<option value="tnt">TNT Minecraft</option>
+	</select>
+
+	<div id="imageContainer">
+		<img id="vide" src="imgmissiles/vide.png" alt="Image 1">
+		<img id="r36" src="imgmissiles/r36.png" alt="Image 1">
+		<img id="satan2" src="imgmissiles/satan2.jpg" alt="Image 1">
+		<img id="sm36atlas" src="imgmissiles/sm36atlas.png" alt="Image 2">
+		<img id="lmg30" src="imgmissiles/lmg30.jpg" alt="L'image du missile LGM-30 Minuteman n'as pas pu charger">
+		<img id="lmg30" src="imgmissiles/tnt.jpg" alt="L'image de la TNT Minecraft n'as pas pu charger">
+	</div>
+	<button id="btn">Lancer
+	<div class="star-1">
+		<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+	  </div>
+	  <div class="star-2">
+		<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+	  </div>
+	  <div class="star-3">
+		<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+	  </div>
+	  <div class="star-4">
+		<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+	  </div>
+	  <div class="star-5">
+		<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+	  </div>
+	  <div class="star-6">
+		<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+	  </div>
+	</button></a>
+	<canvas id="confetti-canvas"></canvas>
+
+	<!-- JS -->
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+	<script type="text/javascript">
+	  const btn = document.querySelector('#btn');
+	  const canvas = document.querySelector('#confetti-canvas');
+	  function onButtonClick(){
+		var myConfetti = confetti.create(canvas, {
+		  resize: true,
+		  useWorker: true
+		});
+		myConfetti({
+		  particleCount: 100,
+		  spread: 160
+		});
+	  }
+	  btn.addEventListener('click', onButtonClick);
+	</script>
+	<br>
+	<footer>
+	<h5>&copy; Pierre Sen 2023</h5>
+	</footer>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	<audio loop autoplay>
+	<source src="assets/music.mp3" type="audio/mpeg">. 
+	
+	</body>
+</html>
